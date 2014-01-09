@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gitator - Find awesome repos/users based on your GitHub Profile!</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="gh-btn.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <a href="https://github.com/prat0318/gitator"><img id="ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+  <div id="wrap">
+	  <div class="container">
+		<div class="page-header">
+		  <h1><a href="/">Gitator</a><small> Find awesome repos which best suit your profile!
+		  </small></h1>
+		</div>
+	  	<div class="row" style="text-align: center; padding: 50px; margin: 0 auto; max-width: 300px">
+
+		    <form method="get" action="login" onsubmit="a=document.getElementById('username'); if(a.value.length == 0)a.value=a.getAttribute('placeholder')">
+		      <div class="input-group input-group-lg">
+			      <input id="username" name="username" type="text" class="form-control" placeholder="schacon">
+			      <input name="public" value="true" type="hidden">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default btn-lg" type="submit"><span class="glyphicon glyphicon-log-in"></span></button>
+			      </span>
+			     </div><!-- /input-group -->
+			     <span style="font-size: 80%">(Your Github Username)</span>
+		     </form>
+		    <br/>
+		    <span style="font-size: 180%">OR</span>
+		    <br/> <br/>
+		  <button class="btn btn-default btn-primary btn-lg" type="button" onclick="window.location='/login'"><span class="gh-ico white-gh-ico"></span> Login with GitHub</button>
+		  <span style="font-size: 80%">(Just public access)</span>
+		</div><!-- /.row -->
+	</div>
+  </div>
+  <div id="footer">
+	     <a role="button" class="btn btn-default btn-primary btn-xs" id="footer-button" href="http://github.com/prat0318/gitator/issues/new">
+	      <span class="glyphicon glyphicon-envelope"></span> Feedback/Suggestions</a>
+  </div>
+</body>
+</html>
