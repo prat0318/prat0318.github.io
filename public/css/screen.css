@@ -34,7 +34,11 @@ img { -ms-interpolation-mode:bicubic; }
 html>body { font-size:16px; }
 p { margin: 0 0 1.5em 0; text-align: justify; }
 
-a { text-decoration: none; color: #339; }
+a { 
+	text-decoration: none; 
+	color: inherit;
+	font-weight: bold;
+}
 a:hover { text-decoration: underline; color: #33f; }
 a.pdf:before { 
 	margin-right: 1em;
@@ -164,7 +168,7 @@ ul {
 /*	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 */
-	line-height: 1.5em;
+	line-height: 1.3em;
 	padding-left: 2.5em;
 }
 ul li {
