@@ -1,0 +1,18 @@
+<h1>
+	<a href="/"><span class="glyphicon glyphicon-user"></span> Prateek Agarwal</a>
+	<a target="_blank" href="http://www.linkedin.com/in/prat0318"><img border="0" src="public/images/link-linkedin-64-gray.png" class="link-linkedin" width="20"></a>
+</h1>
+<ul class="nav">
+	<li><a target="_blank" href="public/resume.pdf">Pdf</a></li>
+	<li><a target="_blank" href="http://github.com/prat0318">Projects</a></li>
+	<li><a href="caricature.html">Caricatures</a></li>
+</ul>
+<script>
+	$(document).ready(function() {
+		$(".link-linkedin").hover(function() {
+			$(this).attr("src","public/images/link-linkedin-64.png");
+				}, function() {
+			$(this).attr("src","public/images/link-linkedin-64-gray.png");
+		});
+	});
+</script>
