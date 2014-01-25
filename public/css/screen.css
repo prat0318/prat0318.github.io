@@ -558,4 +558,30 @@ img.maruku-png { }
 	color:#FFF;
 }
 
+.contact-details {
+	float: right;
+	width: 14em;
+	font-size: 80%;
+}
 
+.emphnext {
+	float: left;
+	margin-bottom: 0;
+}
+
+.stars {
+	float: left;
+	font-size: 70%;
+}
+
+.languages {
+	line-height: 1.6em;
+}
+
+.education {
+	font-size: 90%;
+}
+
+.right {
+	float: right;
+}
