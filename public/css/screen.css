@@ -21,7 +21,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 /* @end */
 
 body {
-	font-family: Palatino, georgia, "times new roman", serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, "times new roman", serif;
 	background-color: whitesmoke;
 	background-position: center -18em;
 	background-repeat: repeat-x; 
@@ -252,13 +252,6 @@ ul.compact li a {
 }
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
-
-/* @group Twitter */
-#twitter_update_list { display: inline; margin: 0; }
-#twitter_update_list li { display: inline; margin: 0;}
-.twitter-title { display: inline; margin: 0; }
-.twitter-title a { display: inline; }
-/* @end */
 
 body#Work #header a.work, 
 body#Home #header a.home, 

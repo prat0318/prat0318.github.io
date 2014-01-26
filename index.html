@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Prateek Agarwal (prat0318)</title>
-
+		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
+		<link rel="stylesheet" type="text/css" href="public/css/gh-icon.css" />
+		<link rel="icon" type="image/png" href="public/images/resume.png" />
 	</head>
 	<body id="">
 		<div id="site">
@@ -15,18 +16,22 @@
 			<div id="footer">
 				<address>
 					<span class="engine">
-						CSS Template used is designed by <a href="http://mark.reid.name/">Mark Reid</a>		
+						Powered by <a href="http://prettyresu.me">Prettyresume</a>, CSS Template by <a href="http://mark.reid.name/">Mark Reid</a>		
 					</span>
 				</address>
 			</div>
 		</div>
 	</body>
-	<link rel="stylesheet" type="text/css" href="public/css/gh-icon.css" />
 </html>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$("#page-container").load("page.html")
 		$("#header").load("header.html")
+		$("#header").hover(function() {
+			$("#link-linkedin").attr("src","public/images/link-linkedin-64.png");
+				}, function() {
+			$("#link-linkedin").attr("src","public/images/link-linkedin-64-gray.png");
+		});
 	});
 </script>
