@@ -578,3 +578,7 @@ img.maruku-png { }
 .right {
 	float: right;
 }
+
+.gray {
+  opacity: 0.3
+}
