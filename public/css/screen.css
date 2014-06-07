@@ -74,30 +74,10 @@ sup { line-height: 1ex; }
 	line-height:1.5em;
 }
 
-#page, #disqus_thread {
+#page {
 	background: white;
 	padding: 3em 3em 1.5em 3em;
-	border: 1px solid #ccc;
 }
-
-/* More experimental CSS3 features */
-#page, #disqus_thread {
-	box-shadow: 2px 2px 8px #aaa;
-	-webkit-box-shadow: 2px 2px 8px #aaa;
-	-moz-box-shadow: 2px 2px 8px #aaa;	
-}
-
-#disqus_thread { padding-top: 0; }
-
-/* TODO
-#page { counter-reset: section; }
-#page h2:before {
-	margin-left: -3.5ex;
-	color: silver;
-	content: "§" counter(section) ". ";
-	counter-increment: section 2;
-}
-*/
 
 /* @group FancyFirst */
 .emphnext + p:first-letter, p.emphfirst:first-letter {
@@ -371,87 +351,10 @@ pre > code {
 /* @end */
 
 
-/* @group Disqus */
-#disqus_thread {
-	margin-top: 2.93em;
-}
-.dsq-comment-body {
-	text-align: justify;
-	line-height: 1.29em;
-}
-.dsq-comment {
-	padding-top: 0 !important;
-	margin-top: 1.7em !important;
-	margin-bottom: 1.9em !important;
-	background-image: none !important;
-}
-.dsq-comment-message {
-	line-height: 1.714em;
-}
-.dsq-comment-header {
-	background-color: whitesmoke !important;
-	border-top: 1px solid silver !important;
-	border-bottom: 1px solid silver !important;
-	margin-bottom: 1.15em !important;
-}
-.dsq-header-time { margin-left: 0 !important; }
-.dsq-comment-header cite { 
-	font-variant: small-caps;
-	margin-left: 0 !important;
-}
-.dsq-comment-footer { 
-	font-size: 75% !important; 
-	margin-top: 1px !important;
-}
-#dsq-options {
-	background: whitesmoke;
-	border-bottom: 1px solid silver;
-	border-top: 1px solid silver;
-	padding: 0 0 0 1em;
-}
-#dsq-comments-count {
-	margin-top: 0.8em !important;
-	margin-bottom: 1.2em !important;
-}
-#dsq-extra-links { padding-left: 0 !important; }
-#dsq-extra-links li img { display: none; }
-#dsq-options-toggle { color: silver; font-size: 75% !important;}
-#dsq-add-new-comment {
-	margin-top: 1.19em !important;
-	margin-bottom: 1.25em !important;
-}
-/* The following position, width and height ensure
- * that none of the body in the iframe shows through.
- */
-form#comment {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: white !important;
-}
-/* @end */
-
 /* @group LibraryThing */
 span.LTtitle { display: none; }
 div.LTitem { display: inline; margin-right: 0.7em; }
 div.LTprovided { display: none; }
-/* @end */
-
-/* @group Last.fm */
-#lastfm a { margin-right: 0.7em; }
-/* @end */
-
-/* @group Delicious */
-.delicious-posts { }
-.delicious-posts ul, .delicious-posts li, .delicious-banner { margin: 0; padding: 0 }
-.delicious-posts li { list-style-position: outside; margin-bottom: 1em; margin-left: 1em; text-align: justify; }
-.delicious-post { }
-.delicious-banner { display: none; }
-.delicious-posts a:hover { }
-.delicious-posts a { }
-.delicious-post a { font-weight: bold; }
-p.delicious-extended { font-size: 100%; display: inline; }
-p.delicious-extended:before { content: ' — '; }
 /* @end */
 
 /* @group Footer */
