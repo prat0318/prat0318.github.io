@@ -7,18 +7,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
-		<link rel="stylesheet" type="text/css" href="public/css/gh-icon.css" />
+                 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 	</head>
 	<body id="">
 		<div id="site">
 			<div id="header"></div>
-			<embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&autoplay=1&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F105808192259708326911%2Falbumid%2F5696837821414190673%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCILEgtOAiqqyNQ%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>		
+
+        <div id="tabs" style="width:810px">
+            <ul>
+                <li><a href="#tabs-1">Caricatures</a></li>
+                <li><a href="#tabs-2">Being Cyrus</a></li>
+                <li><a href="#tabs-3">Digital Paintings</a></li>
+            </ul>
+            <div id="tabs-1" style="padding:0">
+                <embed type="application/x-shockwave-flash" src="https://static.googleusercontent.com/external_content/picasaweb.googleusercontent.com/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&autoplay=1&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F105808192259708326911%2Falbumid%2F5696837821414190673%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCILEgtOAiqqyNQ%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>		
+            </div>
+            <div id="tabs-2" style="padding:0">
+                <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F105808192259708326911%2Falbumid%2F5320754531176893761%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </div>
+            <div id="tabs-3" style="padding:0"> 
+                <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F105808192259708326911%2Falbumid%2F6108485237194683265%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+            </div>
+        </div>
+
 		</div>
 	</body>
 </html>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+ <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+ <script src="//code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
 <script>
 	$(document).ready(function(){
 		$("#header").load("header.html")
+                $(function() {
+                        $( "#tabs" ).tabs();
+                });
 	});
 </script>
