@@ -2,7 +2,7 @@
 mkdir -p ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "prat0318@gmail.com" -N "" -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
-read "?Add ^ pubkey to: https://github.com/settings/ssh ..."
+vared -p 'Add ^ pubkey to: https://github.com/settings/ssh ...' -c tmp
 
 echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 git clone git@github.com:prat0318/oh-my-zsh.git .oh-my-zsh
