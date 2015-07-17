@@ -1,5 +1,7 @@
 #!/bin/sh
-# passwd; curl www.prat0318.me/create.sh -o /tmp/create.sh; zsh /tmp/create.sh
+# curl www.prat0318.me/create.sh -o /tmp/create.sh; zsh /tmp/create.sh
+passwd
+sudo apt-get update && apt-get install -y openssh-client git curl vim python-dev python-pip wget
 mkdir -p ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "prat0318@gmail.com" -N "" -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
