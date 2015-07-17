@@ -1,6 +1,6 @@
 #!/bin/sh
 mkdir -p ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "prat0318@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "prat0318@gmail.com" -N "" -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 read "?Add ^ pubkey to: https://github.com/settings/ssh ..."
 
