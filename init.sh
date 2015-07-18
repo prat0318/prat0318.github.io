@@ -1,5 +1,5 @@
 #!/bin/sh
-# apt-get install -y curl; curl www.prat0318.me/init.sh | sh
+# apt-get install -y curl; source < (curl -s www.prat0318.me/init.sh)
 apt-get install -y zsh openssl
 echo "Adding new user prat0318..."
 # adduser --ingroup sudo --shell /usr/bin/zsh --disabled-login --gecos "" prat0318
