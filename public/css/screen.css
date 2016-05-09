@@ -221,6 +221,7 @@ ul.compact li a {
 #header .hover { color: transparent; }
 #header:hover a { color: black; text-shadow: #aaa 2px 2px 3px; }
 #header:hover a #github-header { opacity: 1.0 }
+#header:hover a #google-header { opacity: 1.0 }
 #header:hover a:hover { text-decoration: none; }
 #header a:hover .hover { color: silver; }
 #header {
