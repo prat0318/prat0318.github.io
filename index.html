@@ -1,3 +1,6 @@
+---
+title: Prateek Agarwal
+---
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,8 +18,12 @@
 	</head>
 	<body id="">
 		<div id="site">
-			<div id="header"></div>
-			<div id="page-container"></div>
+			<div id="header">
+                            {% include header.html %}
+                        </div>
+			<div id="page-container">
+                            {% include page.html %}
+                        </div>
 			<div id="footer">
 				<address>
 					<span class="engine">
@@ -30,8 +37,6 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$("#page-container").load("page.html")
-		$("#header").load("header.html")
 		$("#header").hover(function() {
 			$("#link-linkedin").attr("src","public/images/link-linkedin-64.png");
 			$("#link-twitter").attr("src","public/images/twitter.png");
